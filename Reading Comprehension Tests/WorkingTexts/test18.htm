@@ -1,0 +1,796 @@
+<html>
+<head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Valentin Kataev."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+<title>
+Test 18
+</title>
+
+<script language="javascript" type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+// BrowserCheck Object
+
+function BrowserCheck() {
+	var b = navigator.appName
+//HBS extension
+	this.mac = (navigator.appVersion.indexOf('Mac') != -1)
+	if (b=="Netscape") this.b = "ns"
+	else if (b=="Microsoft Internet Explorer") this.b = "ie"
+	else this.b = b
+	this.version = navigator.appVersion
+	this.v = parseInt(this.version)
+	this.ns = (this.b=="ns" && this.v>=4)
+	this.ns4 = (this.b=="ns" && this.v==4)
+	this.ns5 = (this.b=="ns" && this.v==5)
+	this.ie = (this.b=="ie" && this.v>=4)
+	this.ie4 = (this.version.indexOf('MSIE 4')>0)
+	this.ie5 = (this.version.indexOf('MSIE 5')>0)
+	this.min = (this.ns||this.ie)
+	this.CRAPBrowser = (this.ie4 && this.mac); //Cannot Resolve Addresses Properly
+}
+
+is = new BrowserCheck();
+
+var LocFolder = GetFolder(window.location.href);
+function GetFolder(LocPath){
+	LocPath = ReplaceStuff('\'','%27',LocPath);
+	var i = LocPath.lastIndexOf('/');
+	if (i<0){i=LocPath.lastIndexOf('\\')};
+	return LocPath.substring(0,i);
+}
+
+function CombineURLs(InURL){
+	var i = InURL.indexOf('../');
+	var s = LocFolder;
+	while (i >- 1){
+		s = GetFolder(s);
+		InURL = InURL.substring(3,InURL.length);
+		i = InURL.indexOf('../');
+	}
+	return s + '/' + InURL;
+}
+
+x = new Array();
+function ResolveURLs(InText,Attribute){
+	x.length=0;
+	var Temp = InText.toLowerCase();
+	var z;
+	var AttLen = Attribute.length + 2;
+	var y=Temp.lastIndexOf(Attribute + '="');
+	while (y>-1){
+		var sLoc = y+AttLen;
+		if (Temp.substring(sLoc,sLoc+5) != 'http:'){
+			x[x.length]=new Array();
+			x[x.length-1][0] = sLoc;
+			z = Temp.indexOf('"',sLoc);
+			x[x.length-1][1] = z;
+			x[x.length-1][2] = InText.substring(sLoc,z);
+
+		}
+		Temp = Temp.substring(0,y);
+		y=Temp.lastIndexOf(Attribute + '="');
+	}
+	for (var j=0; j<x.length; j++){
+		InText = InText.substring(0,x[j][0]) + CombineURLs(x[j][2]) + InText.substring(x[j][1], InText.length);
+	}
+	return InText;
+}
+
+
+
+function ResolveAllURLs(Stuff){
+	Stuff = ResolveURLs(Stuff,'href');
+	Stuff = ResolveURLs(Stuff,'src');
+	Stuff = ResolveURLs(Stuff,'parent.location');
+	return Stuff;
+}
+
+
+var ExBGColor = '#fbfbfb';
+
+
+
+var PageBGColor = '#fcf0cd';
+
+
+
+var NavBarColor = '#8080c0';
+
+
+var TextColor = '#008080';
+var CurrQNum = 0;
+var ALetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var CorrectIndicator = ':-)';
+var IncorrectIndicator = 'X';
+var YourScoreIs = '<b><Font color="#3300CC">Your score is</Font></b>';
+var Tries = 0;
+var CorrectChoices = 0;
+var ContinuousScoring = false;
+var CorrectFirstTime = '<b><Font color="#0099FF" size="2">Questions answered correctly first time:</Font></b> ';var ExerciseTitle = '<b><Font color="#00CC33">Test 18</Font></b>';
+var ExerciseSubtitle = '<b><Font color= "#CC0099">I. Read the text and choose the best answer.</Font></b>';
+var Instructions = ''; //'';
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = '<b><Font color="#CC0000">Correct!</Font></b>';
+var DefaultWrong = '<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+var QsToShow = 5;
+var ShowOneByOne = true;
+var ReadingURL = '';
+var EraseFeedback = true;
+var Score = 0;
+
+var PreviousPage = history.length;
+
+
+
+ReadingText='<html><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Valentin Kataev."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta><title>THE UNICORN IN THE GARDEN</title></head><body background="back_full_u.gif" bgcolor="#fcf0cd" text="#008080" link="#0000ff" vlink="#0000cc"><center><table border="0" cellpadding="5" cellspacing="1" width="85%"><tr><td align="center" bgcolor="#fcf0cd"><font size="+1" face="Geneva,Arial" color="#0000a0"><b><Font color="#3300FF">THE UNICORN IN THE GARDEN</Font></b><br></br></font></td></tr><tr><td bgcolor="#fbfbfb"><font face="Geneva,Arial" size="-1" color="#008080"><b><Font size="2"><br /> &nbsp;&nbsp;&nbsp;&nbsp;Once upon a sunny morning a man looked up from his scrambled eggs to see a white unicorn with a gold horn quietly cropping the roses in the garden. The man went up to the bedroom where his wife was still asleep and woke her. \'There\'s a unicorn in the garden,\' he said. \'Eating roses.\' <br /> &nbsp;&nbsp;&nbsp;&nbsp;She opened one unfriendly eye and looked at him. \'The unicorn is a mythical beast,\' she said, and turned her back on him. The man walked slowly downstairs and out into the garden. The unicorn was still there; he was now among the tulips. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'Here, unicorn,\' said the man, and pulled up a lily and gave it to him. <br /> &nbsp;&nbsp;&nbsp;&nbsp;The unicorn ate it gravely. With a high heart, because there was a unicorn in his garden, the man went upstairs again. The unicorn,\' he said, \'ate a lily\'. His wife sat up in bed and looked at him, coldly.<br /> &nbsp;&nbsp;&nbsp;&nbsp;\'You are booby,\' she said, \'and I am going to have you put in the booby-hatch.\' The man, who had never liked the words \'booby\' and \'booby-hatch\', and who liked them even less on a shining morning when there was a unicorn in the garden, thought for a moment.<br /> &nbsp;&nbsp;&nbsp;&nbsp;\'We\'ll see about that,\' he said. <br /> &nbsp;&nbsp;&nbsp;&nbsp;He walked over to the door. \'He has a golden horn in the middle of his forehead,\' he told her. Then he went back to the garden to watch the unicorn; but the unicorn had gone away. The man sat down among the roses and went to sleep. As soon as the husband had gone out of the house, the wife got up and dressed as fast as she could. She was very excited. She telephoned the police and she telephoned a psychiatrist; she told them to hurry to her house and bring a strait-jacket. When the police and the psychiatrist arrived, they sat down in chairs and looked at her, with great interest. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'My husband,\' she said, \'saw a unicorn this morning.\' <br /> &nbsp;&nbsp;&nbsp;&nbsp;The police looked at the psychiatrist and the psychiatrist looked at the police. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'He told me it ate a lily\', she said. <br /> &nbsp;&nbsp;&nbsp;&nbsp;The psychiatrist looked at the police and the police looked at the psychiatrist. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'He told me it had a golden horn in the middle of its forehead,\' she said. <br /> &nbsp;&nbsp;&nbsp;&nbsp;At a signal from the psychiatrist, the police leapt from their chairs and seized the wife. She put up a terrific struggle, but they finally subdued her. Just as they got her into the strait-jacket, the husband came back into the house. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'Did you tell your wife you saw a unicorn?\' asked the police. <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'Of course not,\' said the husband. The unicorn is a mythical beast.\' <br /> &nbsp;&nbsp;&nbsp;&nbsp;\'That\'s all I wanted to know,\' said the psychiatrist. \'Take her away. I\'m sorry, sir, but your wife is as crazy as a jay bird.\' <br /> &nbsp;&nbsp;&nbsp;&nbsp;So they took her away, screaming, and shut her up in an institution. The husband lived happily ever after.<br /></b></Font></font></td></tr></table></center></body></html>';
+
+
+if (is.CRAPBrowser){ReadingText=ResolveAllURLs(ReadingText);}
+
+
+var NavBar='';
+
+
+NavBar+='<tr><form name="NavButtons1" action=""><td bgcolor="#8080c0" align="center">';
+NavBar+='<font face="Geneva,Arial" size="-1">';
+
+
+
+NavBar+='<input type="button" value="=&gt;" onclick=\'parent.location="test18_2.htm"\'></input>';
+NavBar+='</font></td></form></tr>';
+if (is.CRAPBrowser){NavBar=ResolveAllURLs(NavBar)};
+
+
+var TitleCode = '<tr><td align="center" valign="middle" bgcolor="#fcf0cd">';
+TitleCode += '<font size="+1" face="Geneva,Arial" color="#0000a0">' + ExerciseTitle + '</font><br />';
+TitleCode += '<font size="-1" face="Geneva,Arial" color="#0000a0">' + ExerciseSubtitle + '<br />';
+TitleCode += '</font></td></tr>';
+
+var QButtonsOpener = '<table border="0" width="85%" cellpadding="10">';
+QButtonsOpener += '<tr><td align="center" valign="middle"><form>';
+QButtonsOpener += '<font size="+1"><input type="button" value="&lt;=" onclick="parent.ChangeQ(-1)"></input>';
+var QButtonsCloser = '<input type="button" value="=&gt;" onclick="parent.ChangeQ(1)"></input>';
+QButtonsCloser += '</font></form></td></tr></table>';
+
+var TableOpener = '<form name="QForm">';
+TableOpener += '<table border="0" width="85%">';
+var QRow = '<tr><td valign="top" bgcolor="#fbfbfb" align="right">';
+QRow += '<font size="+1" face="Geneva,Arial" color="#008080">[QNumber]</font></td>';
+QRow += '<td colspan="3" valign="top" bgcolor="#fbfbfb"><font size="-1" face="Geneva,Arial" color="#008080">[Question]<br />&nbsp;';
+QRow += '</font></td></tr>';
+
+var ARow = '<tr><td></td><td valign="top" bgcolor="#fbfbfb"><input type="text" value=" " size="3" name="FB_[QNum]_[ANum]"></input></td>';
+ARow += '<td valign="top" bgcolor="#fbfbfb"><input type="button" value="[ALetter]" OnClick="parent.CheckAnswer([QNum],[ANum])"></input></td>';
+ARow += '<td width="100%" bgcolor="#fbfbfb"><font size="-1" face="Geneva,Arial" color="#008080">[Ans]</font></td></tr>';
+
+var MARow = '<tr><td></td><td valign="top" bgcolor="#fbfbfb" colspan="3"><input type="checkbox" name="A_[QNum]_[ANum]" value="[Correct]"></input>';
+MARow += '<font size="-1" face="Geneva,Arial" color="#008080">[Ans]</font></td></tr>';
+
+var CheckButton = '<tr><td></td><td valign="top" bgcolor="#fbfbfb" ><input type="button" value="Check"';
+CheckButton += ' onclick="parent.CheckMulti([QNum])"></input></td></tr>';
+
+TableCloser = '</table></form>';
+
+function GoBack(){
+	var BackSkip = history.length - PreviousPage;
+	if (BackSkip > 0){
+		history.go((BackSkip+1)*-1);
+	}
+	else{
+		parent.history.back();
+	}
+}
+
+function ReduceItems(){
+	var ItemToDump=0;
+	var j=0;
+	while (I.length > QsToShow){
+		ItemToDump = Math.floor(I.length*Math.random());
+		for (j=ItemToDump; j<(I.length-1); j++){
+			I[j] = I[j+1];
+		}
+		I.length = I.length-1;
+	}
+}
+
+function Shuffle(InArray){
+	Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < j; k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteFeedback(Feedback) {
+//Build the output string
+	var OutString = '';
+	OutString += '<html>';
+	OutString += '<body  background="back_full_u.gif" bgcolor="#fcf0cd" text="#008080" link="#0000ff" vlink="#0000cc">';
+	OutString += '<center><table border="0" cellpadding="5" cellspacing="1" width="85%">';
+	OutString += NavBar;
+	if (Feedback.length>0){
+		OutString += '<tr><td bgcolor="#fbfbfb" align="center">'; 
+		OutString += '<font face="Geneva,Arial" size="-1" color="#008080">';
+		OutString += Feedback;
+		OutString += '</font></td></tr>'
+	}
+	OutString += '</table></center></body></html>';
+
+	if (is.CRAPBrowser){OutString=ResolveAllURLs(OutString);}
+
+//Write it to the frame
+	TopFrame.document.clear();
+	TopFrame.document.open();
+	TopFrame.document.write(OutString);
+	TopFrame.document.close();
+}
+
+function StartUp(){
+
+
+
+
+//Write the reading frame
+	ShowReading();
+
+
+
+//Reduce array if required
+	if (QsToShow < I.length){
+		ReduceItems();
+	}
+
+//Shuffle stuff if required
+
+	if (ShuffleQs == true){
+		I = Shuffle(I);
+	}
+
+	if (ShuffleAs == true){
+		for (var i=0; i<I.length; i++){
+			I[i][1] = Shuffle(I[i][1]);
+		}
+	}
+
+//Create arrays
+	CreateStatusArrays();
+
+
+
+//Show the first question or all of them
+	if (ShowOneByOne == false){
+		ShowAllQs();
+	}
+	else{
+		ShowQuestion(CurrQNum);
+	}
+
+//Write the top frame
+	WriteFeedback(Instructions);
+}
+
+
+I = new Array();
+
+I[0] = new Array();
+I[0][0]='<b>What was the man doing when he saw a unicorn?</b>';
+I[0][1] = new Array();
+I[0][1][0] = new Array();
+I[0][1][0][0]='<b>He was cropping the roses.</b>';
+I[0][1][0][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[0][1][0][2] = 0;
+I[0][1][1] = new Array();
+I[0][1][1][0]='<b>He was eating breakfast.</b>';
+I[0][1][1][1]='<b><Font color="#CC0000">Correct!</Font></b>';
+I[0][1][1][2] = 1;
+I[0][1][2] = new Array();
+I[0][1][2][0]='<b>He was looking at the garden. </b>';
+I[0][1][2][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[0][1][2][2] = 0;
+I[0][1][3] = new Array();
+I[0][1][3][0]='<b>He was eating the roses.</b>';
+I[0][1][3][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[0][1][3][2] = 0;
+I[0][2] = 0;
+
+I[1] = new Array();
+I[1][0]='<b>Why didn\'t his wife believe his story?</b>';
+I[1][1] = new Array();
+I[1][1][0] = new Array();
+I[1][1][0][0]='<b>She didn\'t like it.</b>';
+I[1][1][0][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[1][1][0][2] = 0;
+I[1][1][1] = new Array();
+I[1][1][1][0]='<b>She knew that the unicorns were mythical beasts. </b>';
+I[1][1][1][1]='<b><Font color="#CC0000">Correct!</Font></b>';
+I[1][1][1][2] = 1;
+I[1][1][2] = new Array();
+I[1][1][2][0]='<b>She didn\'t like unicorns at all. </b>';
+I[1][1][2][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[1][1][2][2] = 0;
+I[1][1][3] = new Array();
+I[1][1][3][0]='<b>The unicorns usually eat roses.</b>';
+I[1][1][3][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[1][1][3][2] = 0;
+I[1][2] = 0;
+
+I[2] = new Array();
+I[2][0]='<b>What were the police doing while listening to the woman\'s story?</b>';
+I[2][1] = new Array();
+I[2][1][0] = new Array();
+I[2][1][0][0]='<b>They were drinkink tea.</b>';
+I[2][1][0][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[2][1][0][2] = 0;
+I[2][1][1] = new Array();
+I[2][1][1][0]='<b>They were waiting for her husband to come.</b>';
+I[2][1][1][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[2][1][1][2] = 0;
+I[2][1][2] = new Array();
+I[2][1][2][0]='<b>They ware waiting for a signal to seize her</b>';
+I[2][1][2][1]='<b><Font color="#CC0000">Correct!</Font></b>';
+I[2][1][2][2] = 1;
+I[2][1][3] = new Array();
+I[2][1][3][0]='<b>They were waiting for the unicorn to come itself.</b>';
+I[2][1][3][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[2][1][3][2] = 0;
+I[2][2] = 0;
+
+I[3] = new Array();
+I[3][0]='<b>When did the police seize the woman and got her into the strait-jacket? </b>';
+I[3][1] = new Array();
+I[3][1][0] = new Array();
+I[3][1][0][0]='<b>When her husband gave them a signal.</b>';
+I[3][1][0][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[3][1][0][2] = 0;
+I[3][1][1] = new Array();
+I[3][1][1][0]='<b>When the unicor entered the room.</b>';
+I[3][1][1][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[3][1][1][2] = 0;
+I[3][1][2] = new Array();
+I[3][1][2][0]='<b>When the psychiatrist told them to do it.</b>';
+I[3][1][2][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[3][1][2][2] = 0;
+I[3][1][3] = new Array();
+I[3][1][3][0]='<b>Just when her husband came back from the garden.</b>';
+I[3][1][3][1]='<b><Font color="#CC0000">Correct!</Font></b>';
+I[3][1][3][2] = 1;
+I[3][2] = 0;
+
+I[4] = new Array();
+I[4][0]='<b>When did the doctor tell the police to take the woman away?</b>';
+I[4][1] = new Array();
+I[4][1][0] = new Array();
+I[4][1][0][0]='<b>When he got a signal from the police. </b>';
+I[4][1][0][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[4][1][0][2] = 0;
+I[4][1][1] = new Array();
+I[4][1][1][0]='<b>When the husband came back home.</b>';
+I[4][1][1][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[4][1][1][2] = 0;
+I[4][1][2] = new Array();
+I[4][1][2][0]='<b>When the husband said that he didn\'t tell his wife about the unicorn. </b>';
+I[4][1][2][1]='<b><Font color="#CC0000">Correct!</Font></b>';
+I[4][1][2][2] = 1;
+I[4][1][3] = new Array();
+I[4][1][3][0]='<b>When the husband explained everything.</b>';
+I[4][1][3][1]='<b><Font color="#00CC99">Sorry! Try again.</Font></b>';
+I[4][1][3][2] = 0;
+I[4][2] = 0;
+
+
+Status = new Array();
+
+
+function CreateStatusArrays(){
+	for (var x=0; x<I.length; x++){
+		Status[x] = new Array();
+		Status[x][0] = 0; // Question not done yet
+		Status[x][1] = new Array(); //for tracking whether answers chosen
+		for (var y=0; y<I[x][1].length; y++){
+			Status[x][1][y] = '0'; //Answers not chosen yet
+		}
+		Status[x][2] = 0; //Wrong tries at this question so far
+		Status[x][3] = 0; //For storing score out of one on this question
+	}
+}
+
+function UpdateQuestionStatus(QNum){
+	if (Status[QNum][2] >= Status[QNum][1].length-1){
+		Status[QNum][0] = 1;
+		for (var i=0; i<Status[QNum][1].length; i++){
+			if (Status[QNum][1][i] == '0'){
+				Status[QNum][1][i] = 'R';
+			}
+		}
+	}
+}
+
+function ReplaceStuff(Token, Replacement, InString){
+	var i = InString.indexOf(Token);
+	var FirstBit = '';
+	var LastBit = '';
+	while (i>-1){
+		FirstBit = InString.substring(0, i);
+		LastBit = InString.substring(i + Token.length, InString.length);	
+		InString = FirstBit + Replacement + LastBit;
+		i = InString.indexOf(Token);
+	}
+	return InString;
+}
+
+function ChangeQ(ChangeBy){
+	var NewNum = CurrQNum + ChangeBy;
+	if ((NewNum >= 0)&&(NewNum<I.length)){
+		CurrQNum = NewNum;
+		ShowQuestion(CurrQNum);
+	}
+	var CurrScore = '';
+	if ((ContinuousScoring == true)&&(EraseFeedback == true)){
+		CalculateScore();
+		var CurrScore = YourScoreIs + ' ' + Score + '%.';
+		WriteFeedback(CurrScore);
+	}
+}
+
+function BuildQuestion(QNum){
+	if (I[QNum][2] == 0){
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = ARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[ALetter]', ' ' + ALetters.charAt(i) + ' ', TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	else{
+		var Temp = ReplaceStuff('[Question]', I[QNum][0], QRow);
+		var AnsRows = '';
+		for (var i=0; i<I[QNum][1].length; i++){
+			TempAns = MARow;
+			TempAns = ReplaceStuff('[ANum]', i, TempAns);
+			TempAns = ReplaceStuff('[Correct]', I[QNum][1][i][2], TempAns);
+			TempAns = ReplaceStuff('[Ans]', I[QNum][1][i][0], TempAns);
+			AnsRows += TempAns;
+		}
+		Temp += AnsRows;
+		Temp += CheckButton;
+		Temp = ReplaceStuff('[QNumber]', QNum+1, Temp);
+		Temp = ReplaceStuff('[QNum]', QNum, Temp);
+	}
+	return Temp;
+}
+
+function DisplayExercise(StuffToDisplay){
+//Build the output string
+	var OutString = '';
+	OutString += '<html>';
+	OutString += '<body  background="back_full_u.gif" bgcolor="#fcf0cd" text="#008080" link="#0000ff" vlink="#0000cc">';
+	OutString += '<center><table border="0" cellpadding="5" cellspacing="1" width="85%">';
+	OutString += TitleCode; 
+	OutString += '<tr><td bgcolor="#fbfbfb" align="center">'; 
+	OutString += '<font face="Geneva,Arial" size="-1">';
+	OutString += StuffToDisplay;
+	OutString += '</font></td></tr>';
+	OutString += NavBar;
+	OutString += '</table></center></body></html>';
+
+	if (is.CRAPBrowser){OutString=ResolveAllURLs(OutString);}
+
+//Write it to the frame
+	BottomFrame.document.clear();
+	BottomFrame.document.open();
+	BottomFrame.document.write(OutString);
+	BottomFrame.document.close();
+}
+
+
+function ShowAllQs(){
+	var Output = '';
+	for (var i=0; i<I.length-1; i++){
+		Output = Output + BuildQuestion(i);
+		Output = Output + '<tr><td colspan="4"><hr></hr></td></tr>';
+	}
+	Output = Output + BuildQuestion(I.length-1);
+	Output = TableOpener + Output + TableCloser;
+	DisplayExercise(Output);
+}
+
+function ShowQuestion(QNum){
+//First, create the Q number readout at the top
+	var Readout = (QNum+1) + '/' + I.length;
+	while (Readout.length < 7){
+		Readout = ' ' + Readout + ' ';
+	}
+	Readout = QButtonsOpener + Readout + QButtonsCloser;
+
+	var Output = BuildQuestion(QNum);
+
+	Output = TableOpener + Output + TableCloser;
+
+	DisplayExercise(Readout + Output);
+
+//Mark the answers already done
+	for (i=0; i<Status[QNum][1].length; i++){
+		if (Status[QNum][1][i] == 'R'){
+			MarkAnswer(QNum,i,true)
+		}
+		if (Status[QNum][1][i] == 'W'){
+			MarkAnswer(QNum,i,false)
+		}
+		if (Status[QNum][1][i] == 'C'){
+			CheckCheckbox(QNum,i);
+		}
+	}
+//Eliminate feedback from previous question
+	if (EraseFeedback == true){
+		WriteFeedback('');
+	}
+}
+
+function CheckMulti(QNum){
+	var TotWrong = 0;
+	var Output = '';
+	var TotAns = I[QNum][1].length;
+	for (var i=TotAns-1; i>=0; i--){
+//Find any incorrect choices
+
+		var b = eval('BottomFrame.document.QForm.A_' + QNum + '_' + i);
+
+		if (b != null){
+//if it's wrong, count it
+			if (b.checked == true){
+				Status[QNum][1][i] = 'C';
+			}
+			else{
+				Status[QNum][1][i] = 'U';
+			}
+			if (((b.checked == true) && (b.value == "0"))||((b.checked == false)&&(b.value == "1"))){
+				TotWrong++;
+			}
+		}				
+	}
+
+	if (TotWrong == 0){
+		Output = DefaultRight;
+	}
+	else{
+		Output = DefaultWrong + '<br />' + (TotAns-TotWrong) + '/' + TotAns;
+	}
+
+//If you haven't tried the question before
+	if (Status[QNum][0] == 0){
+		if (TotWrong > 0){
+			Status[QNum][2]++;
+		}
+		if (TotWrong == 0){
+			Status[QNum][0] = 1;
+//Calculate the score for this question as a floating-point fraction of 1
+			Status[QNum][3] =  ((Status[QNum][1].length - Status[QNum][2]) - 1) / (Status[QNum][1].length - 1);
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+	}
+
+//Check whether the quiz is finished
+	var Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+	}
+
+//Calculate the score if needed
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			Output = Output + '<br />' + YourScoreIs + ' ' + Score + '%.';
+		}
+
+		if (Finished == true){
+			EraseFeedback = false;
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+			}
+		Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+
+}
+
+function CheckAnswer(QNum, ANum){
+	var Output = I[QNum][1][ANum][1];
+
+	if (Output==''){
+		if (I[QNum][1][ANum][2] == 1){
+			Output = DefaultRight;
+		}
+		else{
+			Output = DefaultWrong;
+		}
+	}
+
+//If it's not been previously answered correctly
+	if (Status[QNum][0] == 0){
+//If it's a correct answer
+		if (I[QNum][1][ANum][2] == 1){
+			Status[QNum][0] = 1;//Mark the Q as done
+			Status[QNum][1][ANum] = 'R';
+			MarkAnswer(QNum, ANum, true);
+//Calculate the score for this question as a floating-point fraction of 1
+			var PossibleWrongs = 0;
+			for (var i=0; i<I[QNum][1].length; i++){
+				if (I[QNum][1][i][2] == 0){
+					PossibleWrongs++;
+				}
+			}
+
+			if (PossibleWrongs == 0){PossibleWrongs = 1;}
+
+			Status[QNum][3] = 1 - (Status[QNum][2]/PossibleWrongs);
+
+//If less than zero, set to zero
+			if (Status[QNum][3] < 0){Status[QNum][3] = 0;}
+		}
+		else{
+			if (Status[QNum][1][ANum] != 'W'){
+				Status[QNum][1][ANum] = 'W';
+				MarkAnswer(QNum, ANum, false);
+				Status[QNum][2]++; //increment wrong tries for this Q
+			}
+		}
+	}
+
+	UpdateQuestionStatus(QNum);
+
+//Check whether the quiz is finished
+	var Finished = true;
+	for (var i=0; i<Status.length; i++){
+		if (Status[i][0] == 0){Finished = false;}
+
+	}
+
+//Calculate the score if needed
+		
+	if (Status[QNum][0] == 1){
+		if ((Finished==true)||(ContinuousScoring==true)){
+			CalculateScore();
+			Output = Output + '<br />' + YourScoreIs + ' ' + Score + '%.';
+		}
+
+		if (Finished == true){
+			EraseFeedback = false;
+			var CFT = 0;
+			for (i=0; i<I.length; i++){
+				if (Status[i][2] == 0){
+					CFT++;
+				}
+			}
+		Output += '<br />' + CorrectFirstTime + CFT + '/' + I.length;
+
+		}
+	}
+
+//Show the feedback
+	if (Output.length > 0){
+		WriteFeedback(Output);
+	}
+}
+
+function CalculateScore(){
+	var TriedQs = 0;
+	var TotalScore = 0;
+	for (var i=0; i<Status.length; i++){
+		if ((Status[i][2] > 0)||(Status[i][3] == 1)){
+			TriedQs++;
+			TotalScore += Status[i][3];
+		}
+	}
+	if (TriedQs == 0){
+		Score = 0;
+	}
+	else{
+		Score = (Math.floor(100 * (TotalScore/TriedQs)));
+	}
+}
+
+function MarkAnswer(QNum, ANum, Right){
+	var Mark = CorrectIndicator;
+	if (Right == false){Mark = IncorrectIndicator;}
+
+	if (eval('BottomFrame.document.QForm.FB_' + QNum + '_' + ANum) != null){
+		eval('BottomFrame.document.QForm.FB_' + QNum + '_' + ANum).value = Mark;
+	}
+}
+
+function CheckCheckbox(QNum, ANum){
+	if (eval('BottomFrame.document.QForm.A_' + QNum + '_' + ANum) != null){
+		eval('BottomFrame.document.QForm.A_' + QNum + '_' + ANum).checked = true;
+	}
+}
+
+
+function ShowReading(){
+	if (ReadingFrame != null){
+		if (ReadingURL.length > 0){
+			ReadingFrame.location.href=ReadingURL;
+		}
+		else{
+			ReadingFrame.document.clear();
+			ReadingFrame.document.open();
+			ReadingFrame.document.write(ReadingText);
+			ReadingFrame.document.close();
+		}
+	}
+}
+
+
+
+
+
+
+function Blank(){
+	return '<html><body>&copy;Half-Baked Software. Loading...</body></html>';
+}
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+<!--<body>Fool those dumb ad-inserting ISPs</body>-->
+
+<!--For full XHTML 1.0 compatibility, remove the border and framespacing attributes.
+These are required for proper display in current browsers, but render the document incompatible. Then, you'll need to add the appropriate Document Type Declaration; use
+the W3C XHTML 1 frameset DTD.-->
+
+
+
+
+
+<frameset cols = "50%,50%" framespacing="0" border="0">
+  <frameset rows = "20%,*" onload="StartUp()" framespacing="0" border="0">
+	<frame src="javascript:parent.Blank()" frameborder="0" name="TopFrame"></frame>
+	<frame src="javascript:parent.Blank()" frameborder="0" name="BottomFrame"></frame>
+   </frameset>
+  <frame src="javascript:parent.Blank()" frameborder="0" name="ReadingFrame"></frame>
+</frameset>
+
+
+
+
+
+</html>
