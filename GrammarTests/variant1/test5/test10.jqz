@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Valentin Kataev</dc:creator>
+    <dc:title>Test 10</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Test 10</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;Text&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</reading-title>
+<reading-text>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;I.&amp;#x003C;/Font&amp;#x003E; Our sense of smell, which we normally take &amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;for granted&amp;#x003C;/Font&amp;#x003E;, is nowadays being increasingly used for purposes which might surprise us if we were aware of them. One area in which smells are created to achieve particular
+results is marketing. For some time manufacturers have taken advantage of our sense of smell with regard to household goods. Millions of dollars are spent on product research in the hunt for the right aroma as it is believed perfume influences the way consumers perceive a brand. In a survey in the United States, when people were asked what was the most important factor in their choice of detergent, smell was rated highly, above texture and price.
+&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;II.&amp;#x003C;/Font&amp;#x003E; Now stores are becoming even more direct in their use of smell. The smell of fresh bread in a supermarket tends to encourage people to buy, and people selling their houses are recommended to have coffee brewing when potential buyers arrive. Recognizing the influence of smell, stores are now using aromas to manipulate our subconscious and persuade us to purchase. Suddenly smell is becoming big business. One company specializing in the use of smells to attract customers now has many large stores on its own list of customers. When pleasant smells are filtered through a store&apos;s air conditioning system, people tend to spend longer in the store and buy more. For example, the aroma of chocolate is used in sweet stores, while the smells of leather and perfume are used in clothes stores.
+&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;III.&amp;#x003C;/Font&amp;#x003E; Research shows that smells can increase people&apos;s &amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;view&amp;#x003C;/Font&amp;#x003E; of the value of a product. In a test, people looked at the same types of shoes in two rooms &amp;#x2014; one filled with purified air, the other with a smell of mixed flowers. Eighty-four percent of the people preferred the shoes in the room with the scent of flowers. In fact, many said they would be prepared to pay up to 10$ more for a pair.
+&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;IV.&amp;#x003C;/Font&amp;#x003E; Smells also have other potential uses. Research has shown that certain smells can help to calm anxious people and increase their feeling of security. Smells such as the scent of flowers and pine forests might therefore be used to relax patients in doctors&apos; and dentists&apos; waiting-rooms, and to make the environment more pleasant and less stressful in factories. Some companies are experimenting with different smells to produce different effects in their workers according to the time of day. For example, early in the morning they might put the smell of lemon in the ventilation system to wake people up. In the middle of the morning, when the atmosphere tends to become more tense, the smell of wood could be used to calm people down. Before lunchtime the smell of melting butter would encourage people to go to lunch on time. After lunch, when people often begin to lose concentration, the smell of mint would increase their alertness.&amp;#x003C;/b&amp;#x003E;</reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;A suitable title for the text is&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;How to avoid being manipulated by smells&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;Using smells to influence people&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;New smells in supermarkets&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;In a survey in America, people considered that in their choice of detergent, smell was&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;as important as price.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;less important than price.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;more important than price.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;Some stores now try to attract customers by&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;employing a company specializing in the use of smells.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;providing fresh coffee for them.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;combining the smells of chocolate and leather.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;Over 80% of the people&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;preferred the smell of leather mixed with the scent of flowers.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;were prepared to pay more for the scent of flowers.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;were attracted by the scent of flowers.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#cc0033&quot;&amp;#x003E;The smells of ... could be used by companies to raise the level of alertness of their employees.&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;lemon and wood&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;mint and lemon&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;melting butter and mint&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc33ff&quot;&amp;#x003E;&amp;#x041F;&amp;#x0440;&amp;#x043E;&amp;#x0447;&amp;#x0438;&amp;#x0442;&amp;#x0430;&amp;#x0439;&amp;#x0442;&amp;#x0435; &amp;#x0442;&amp;#x0435;&amp;#x043A;&amp;#x0441;&amp;#x0442; &amp;#x0438; &amp;#x0432;&amp;#x044B;&amp;#x0431;&amp;#x0435;&amp;#x0440;&amp;#x0438;&amp;#x0442;&amp;#x0435; &amp;#x0432;&amp;#x0430;&amp;#x0440;&amp;#x0438;&amp;#x0430;&amp;#x043D;&amp;#x0442; &amp;#x043E;&amp;#x0442;&amp;#x0432;&amp;#x0435;&amp;#x0442;&amp;#x0430;, &amp;#x0441;&amp;#x043E;&amp;#x043E;&amp;#x0442;&amp;#x0432;&amp;#x0435;&amp;#x0442;&amp;#x0441;&amp;#x0442;&amp;#x0432;&amp;#x0443;&amp;#x044E;&amp;#x0449;&amp;#x0438;&amp;#x0439; &amp;#x0441;&amp;#x043E;&amp;#x0434;&amp;#x0435;&amp;#x0440;&amp;#x0436;&amp;#x0430;&amp;#x043D;&amp;#x0438;&amp;#x044E; &amp;#x043F;&amp;#x0440;&amp;#x043E;&amp;#x0447;&amp;#x0438;&amp;#x0442;&amp;#x0430;&amp;#x043D;&amp;#x043D;&amp;#x043E;&amp;#x0433;&amp;#x043E; &amp;#x0442;&amp;#x0435;&amp;#x043A;&amp;#x0441;&amp;#x0442;&amp;#x0430;.&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;Correct!&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</guess-correct>
+<guess-incorrect>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;33cc66&quot;&amp;#x003E;Sorry! Try again.&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>0</include-hint>
+<include-show-answer>0</include-show-answer>
+<next-ex-url>test11.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>0</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Your score is&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E; </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#f5f5f5</page-bg-color>
+<title-color>#0000a0</title-color>
+<ex-bg-color>#ffe3d7</ex-bg-color>
+<text-color>#0000cc</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8040</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;3300ff&quot;&amp;#x003E;Check&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</check-caption>
+<ok-caption>&amp;#x003C;b&amp;#x003E;OK&amp;#x003C;/b&amp;#x003E;</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Show all questions&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</show-all-questions-caption>
+<show-one-by-one-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Show questions one by one&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</show-one-by-one-caption>
+<show-also-correct>0</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>

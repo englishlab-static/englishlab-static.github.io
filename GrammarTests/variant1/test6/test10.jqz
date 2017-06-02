@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hotpot-jquiz-file>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="">
+    <dc:creator>Valentin Kataev</dc:creator>
+    <dc:title>Test 10</dc:title>
+  </rdf:Description>
+</rdf:RDF><version>6</version>
+
+<data>
+<title>Test 10</title>
+
+<timer><seconds>60</seconds><include-timer>0</include-timer></timer>
+
+<reading>
+<include-reading>1</include-reading>
+<reading-title>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;Text&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</reading-title>
+<reading-text>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;I.&amp;#x003C;/Font&amp;#x003E; When he was 17, Richard Gillard staggered home drunk one afternoon to find his parents had changed the locks on the family home and dumped his possessions outside. &apos;I couldn&apos;t have cared less. I just put my head on the doorstep, and fell asleep,&apos; he remembers. Less tolerant parents might have changed the locks earlier. Gillard had fought with teachers at school, smashed furniture at home, been discharged from the army after a fight, threatened his parents with violence and was well-known throughout the neighbourhood for his dirty and untidy appearance.
+&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;II.&amp;#x003C;/Font&amp;#x003E; When his despairing parents threw him out, he slept under cars and in hedgerows for three weeks until a chance meeting with a petty criminal opened up new prospects. &apos;We went all round Wales doing odd jobs, sleeping in the car.&apos; That came to an end when Gillard ruined the car racing it against an oil tanker for a &amp;#x00A3;50 bet. At 18, his only possessions were the clothes he stood in.
+&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;III.&amp;#x003C;/Font&amp;#x003E; Now, three years later, Gillard has just completed a full-time course on helping the housebound elderly and disabled, has a regular girlfriend, is back home with his parents, and does voluntary work with mentally handicapped people in his spare time.
+&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;IV.&amp;#x003C;/Font&amp;#x003E; He has become a model member of society, transformed by spending 10 months on a project called The Prince of Wales Community Venture. The project involves small groups of youths, largely but not entirely unemployed, in a range of activities. The aim is to mix young people who are heading for brilliant careers with more average young people and those who are considered hopeless cases, like Gillard. Gillard&apos;s team ranged from a gypsy to the daughter of a retired oil executive.
+&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;V.&amp;#x003C;/Font&amp;#x003E; The team spends short periods with the police, fire or ambulance services; they study first aid and sports leadership; they work on building sites; they do a lot of &amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;adventurous&amp;#x003C;/Font&amp;#x003E; outdoor activities, such as climbing rock faces. But where the project departs radically from &amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;conventional&amp;#x003C;/Font&amp;#x003E; schemes is in its placing of team members, including those viewed as hopelessly aggressive or inadequate, in short-term jobs in the caring professions. Gillard spent six weeks working as an assistant in a day centre for the mentally handicapped. &apos;I was terrified. I had never come across people older than me who had to be treated like children. But, somehow, I found I could help them.&apos;
+&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;VI.&amp;#x003C;/Font&amp;#x003E; Gillard has no doubt that the project works. &apos;I think the idea of doing constructive things is there in most people, even in someone as far gone as I was. What made the difference for me was seeing people at the day centre with problems worse than mine trying to do something about it. The project saved my life.&apos;
+&amp;#x003C;/b&amp;#x003E;</reading-text>
+
+</reading>
+
+<questions><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;Why did Richard Gillard leave home at 17?&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;He was drunk.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;His parents wanted him to leave.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;He wanted to go to Wales.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;He lived in a car until he&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;left Wales.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;crashed the car.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;found a job.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;At the time the article was published Richard&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;was living in a rented house with his girlfriend.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;had qualified for working with disabled people in a day center.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;was earning his living by helping the mentally handicapped.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;What is the aim of the Prince of Wales Community Venture?&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;To help young people feel part of society.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;To help young people make good careers.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;To provide a variety of leisure activities.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record><question-record><question>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;At the day centre Gillard learnt how to&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</question><clue></clue><category></category><weighting>100</weighting><fixed>0</fixed><question-type>1</question-type><answers><answer><text>&amp;#x003C;b&amp;#x003E;treat children.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;work in a team.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text>&amp;#x003C;b&amp;#x003E;appreciate his advantages.&amp;#x003C;/b&amp;#x003E;</text><feedback></feedback><correct>1</correct><percent-correct>100</percent-correct><include-in-mc-options>1</include-in-mc-options></answer><answer><text></text><feedback></feedback><correct>0</correct><percent-correct>0</percent-correct><include-in-mc-options>1</include-in-mc-options></answer></answers></question-record></questions>
+</data>
+
+<hotpot-config-file>
+<jquiz>
+<exercise-subtitle>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc33ff&quot;&amp;#x003E;&amp;#x041F;&amp;#x0440;&amp;#x043E;&amp;#x0447;&amp;#x0438;&amp;#x0442;&amp;#x0430;&amp;#x0439;&amp;#x0442;&amp;#x0435; &amp;#x0442;&amp;#x0435;&amp;#x043A;&amp;#x0441;&amp;#x0442; &amp;#x0438; &amp;#x0432;&amp;#x044B;&amp;#x0431;&amp;#x0435;&amp;#x0440;&amp;#x0438;&amp;#x0442;&amp;#x0435; &amp;#x0432;&amp;#x0430;&amp;#x0440;&amp;#x0438;&amp;#x0430;&amp;#x043D;&amp;#x0442; &amp;#x043E;&amp;#x0442;&amp;#x0432;&amp;#x0435;&amp;#x0442;&amp;#x0430;, &amp;#x0441;&amp;#x043E;&amp;#x043E;&amp;#x0442;&amp;#x0432;&amp;#x0435;&amp;#x0442;&amp;#x0441;&amp;#x0442;&amp;#x0432;&amp;#x0443;&amp;#x044E;&amp;#x0449;&amp;#x0438;&amp;#x0439; &amp;#x0441;&amp;#x043E;&amp;#x0434;&amp;#x0435;&amp;#x0440;&amp;#x0436;&amp;#x0430;&amp;#x043D;&amp;#x0438;&amp;#x044E; &amp;#x043F;&amp;#x0440;&amp;#x043E;&amp;#x0447;&amp;#x0438;&amp;#x0442;&amp;#x0430;&amp;#x043D;&amp;#x043D;&amp;#x043E;&amp;#x0433;&amp;#x043E; &amp;#x0442;&amp;#x0435;&amp;#x043A;&amp;#x0441;&amp;#x0442;&amp;#x0430;.&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</exercise-subtitle>
+<instructions></instructions>
+<guess-correct>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;cc0033&quot;&amp;#x003E;Correct!&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</guess-correct>
+<guess-incorrect>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;33cc66&quot;&amp;#x003E;Sorry! Try again.&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</guess-incorrect>
+<partly-incorrect>Your answer is partly wrong: </partly-incorrect>
+<enter-a-guess>Please enter a guess.</enter-a-guess>
+<next-correct-letter>Next correct letter in the answer: </next-correct-letter>
+<correct-answers>Correct answers: </correct-answers>
+<show-answer-caption>Show answer</show-answer-caption>
+<include-hint>0</include-hint>
+<include-show-answer>0</include-show-answer>
+<next-ex-url>test11.htm</next-ex-url>
+<send-email>0</send-email>
+<continuous-scoring>0</continuous-scoring>
+<show-correct-first-time>1</show-correct-first-time>
+<shuffle-questions>1</shuffle-questions>
+<shuffle-answers>1</shuffle-answers>
+<show-limited-questions>0</show-limited-questions>
+<questions-to-show>1</questions-to-show>
+<short-answer-tries-on-hybrid-q>2</short-answer-tries-on-hybrid-q>
+<separate-javascript-file>0</separate-javascript-file>
+<case-sensitive>0</case-sensitive>
+<include-keypad>0</include-keypad>
+</jquiz>
+
+<global>
+<your-score-is>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Your score is&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E; </your-score-is>
+<correct-indicator>:-)</correct-indicator>
+<incorrect-indicator>X</incorrect-indicator>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<keypad-characters></keypad-characters>
+<times-up>Your time is over!</times-up>
+<next-ex-caption>=&amp;#x003E;</next-ex-caption>
+<back-caption>&amp;#x003C;=</back-caption>
+<contents-caption>Index</contents-caption>
+<include-next-ex>1</include-next-ex>
+<include-contents>0</include-contents>
+<include-back>1</include-back>
+<contents-url>contents.htm</contents-url>
+<graphic-url></graphic-url>
+<font-face>Geneva,Arial,sans-serif</font-face>
+<font-size>small</font-size>
+<page-bg-color>#f5f5f5</page-bg-color>
+<title-color>#0000a0</title-color>
+<ex-bg-color>#ffe3d7</ex-bg-color>
+<text-color>#0000cc</text-color>
+<link-color>#0000FF</link-color>
+<vlink-color>#0000CC</vlink-color>
+<nav-bar-color>#ff8040</nav-bar-color>
+<formmail-url>http://yourserver.com/cgi-bin/FormMail.pl</formmail-url>
+<email>you@yourserver.com</email>
+<name-please>Please enter your name:</name-please>
+<user-string-1>one</user-string-1>
+<user-string-2>two</user-string-2>
+<user-string-3>three</user-string-3>
+<header-code></header-code>
+<correct-first-time>Questions answered correctly first time: </correct-first-time>
+<check-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;3300ff&quot;&amp;#x003E;Check&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</check-caption>
+<ok-caption>&amp;#x003C;b&amp;#x003E;OK&amp;#x003C;/b&amp;#x003E;</ok-caption>
+<next-q-caption>=&amp;#x003E;</next-q-caption>
+<last-q-caption>&amp;#x003C;=</last-q-caption>
+<hint-caption>Hint</hint-caption>
+<show-all-questions-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Show all questions&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</show-all-questions-caption>
+<show-one-by-one-caption>&amp;#x003C;b&amp;#x003E;&amp;#x003C;Font color=&quot;#CC0033&quot;&amp;#x003E;Show questions one by one&amp;#x003C;/Font&amp;#x003E;&amp;#x003C;/b&amp;#x003E;</show-one-by-one-caption>
+<show-also-correct>0</show-also-correct>
+<process-for-rtl>0</process-for-rtl>
+</global>
+</hotpot-config-file>
+</hotpot-jquiz-file>
